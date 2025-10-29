@@ -8,17 +8,22 @@ public class Terminal {
 
         String fileName = args[0];
         FileReader fileReader = new FileReader(fileName);
-        IAnalyzer a1 = new AnalyzerV3();
-
-        if (fileReader.open()) {
+        IAnalyzer a1 = new AnalyzerV4();
+        if (fileReader.open()) {//+5.0a+5.0b-5.0
             fileReader.readLine(); // Descard line
             IExpression exp = a1.analise(fileReader);
             fileReader.close();
 
             System.out.println("Final Expression: " + exp);
             System.out.println("Complexity: " + exp.getMaxedComplexity());
-        } else {
-            System.err.println("Error: No se pudo abrir el archivo '" + fileName + "'");
+        }
+
+        if (fileReader.open()) {//+5.0a+5.0b-5.0
+            fileReader.readLine(); // Descard line
+            String exp = a1.analiseExtended(fileReader);
+            fileReader.close();
+
+            System.out.println("Extended Expression: " + exp);
         }
     }
 }

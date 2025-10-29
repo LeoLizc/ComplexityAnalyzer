@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         FileReader fileReader = new FileReader("burbuja.txt");
-        IAnalyzer a1 = new AnalyzerV1();
+        IAnalyzer a1 = new AnalyzerV4();
         if (fileReader.open()) {//+5.0a+5.0b-5.0
             fileReader.readLine(); // Descard line
             IExpression exp = a1.analise(fileReader);
