@@ -1,0 +1,29 @@
+Inicio
+
+lea N
+
+para i=1,N,+1
+lea A[i]
+Fpara
+
+
+M = N - 1
+para i=M,1,-1
+
+para j=1,i,+1
+
+si (A[j] > A[j+1])
+aux = A[j]
+A[j] = A[j+1]
+A[j+1] = aux
+Fsi
+
+Fpara
+
+Fpara
+
+para k=1,N,+1
+esc A[k]
+Fpara
+
+Pare

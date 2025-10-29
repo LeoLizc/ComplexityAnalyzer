@@ -1,0 +1,20 @@
+Inicio
+Lea n
+Para i=1,n,+1
+lea A(i)
+Fpara
+m=n-1
+Para i=1,m,+1
+Para j=i,m,+1
+Si (A(j)>A(j+1))
+t=A(j)
+A(j)=A(j+1)
+A(j+1)=t
+Fsi
+Fpara
+Fpara
+
+Para i=1,n,+1
+Esc A(i)
+Fpara
+Pare

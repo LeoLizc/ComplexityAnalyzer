@@ -1,0 +1,8 @@
+Inicio
+
+Lea a
+
+Lea b
+
+sa=0
+Pare

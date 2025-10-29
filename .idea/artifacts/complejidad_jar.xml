@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="complejidad:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/complejidad_jar</output-path>
+    <root id="archive" name="complejidad.jar">
+      <element id="module-output" name="complejidad" />
+    </root>
+  </artifact>
+</component>

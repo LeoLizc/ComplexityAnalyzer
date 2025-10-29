@@ -1,0 +1,36 @@
+Inicio
+lea N
+lea M
+lea P
+
+para i=1,N,+1
+    para j=1,M,+1
+        lea A[i,j]
+    fpara
+fpara
+
+para i=1,M,+1
+    para j=1,P,+1
+        lea B[i,j]
+    fpara
+fpara
+
+para i=1,N,+1
+    para j=1,P,+1
+
+        C[i,j] = 0
+
+        para k=1,M,+1
+            C[i,j] = C[i,j] + A[i,k] * B[k,j]
+        fpara
+
+    fpara
+fpara
+
+para i=1,N,+1
+    para j=1,P,+1
+        esc C[i,j]
+    fpara
+fpara
+
+Pare
